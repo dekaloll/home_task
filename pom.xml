@@ -15,34 +15,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.task1.Main</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
-<dependencies>
-    <dependency>
-        <groupId>ru.pflb.mq</groupId>
-        <artifactId>dummy</artifactId>
-        <version>1.0</version>
-
-    </dependency>
-</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>local</groupId>
+            <artifactId>dummy-connector</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/dummy-connector.jar</systemPath>
+        </dependency>
+    </dependencies>
 
 </project>
 

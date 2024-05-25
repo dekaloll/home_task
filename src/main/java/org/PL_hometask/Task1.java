@@ -1,4 +1,4 @@
-package org.task1;
+package org.PL_hometask;
 
 import ru.pflb.mq.dummy.exception.DummyException;
 import ru.pflb.mq.dummy.implementation.ConnectionImpl;
@@ -9,7 +9,7 @@ import ru.pflb.mq.dummy.implementation.SessionImpl;
 
 import java.util.ArrayList;
 
-public class Main {
+public class Task1 {
     public static void main(String[] args) throws InterruptedException, DummyException {
         ConnectionImpl conn = new ConnectionImpl();
         SessionImpl sess = (SessionImpl) conn.createSession(true);
