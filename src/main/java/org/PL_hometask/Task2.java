@@ -30,5 +30,6 @@ public class Task2 {
 
             }
         }
+    connection.close();
     }
 }
